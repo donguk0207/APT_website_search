@@ -1,4 +1,3 @@
-import os, time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -19,17 +18,15 @@ websites = [
     {'url': 'https://www.hybrid-analysis.com/', 'search_box_xpath': '//*[@id="homepage-submit"]/form/div[3]/div/input'},
     {'url': 'https://urlscan.io/', 'search_box_xpath': '//*[@id="url"]'},
     {'url': 'https://www.criminalip.io/ko/domain','search_box_xpath': '//*[@id="__next"]/div[1]/section/div[1]/div/form/div/input'},
-    {'url': 'https://seculab.somansa.com/analysis', 'search_box_xpath': '//*[@id="inputData"]'},
+    #{'url': 'https://seculab.somansa.com/analysis', 'search_box_xpath': '//*[@id="inputData"]'},
     {'url': 'https://rancert.com/check_url.php', 'search_box_xpath': '//*[@id="strUrl"]'},
-    {'url': 'https://www.scamadviser.com/', 'search_box_xpath': '/html/body/div[1]/div[4]/div/div[1]/div/form/div/div[1]/div/div[1]/input'},
-    {'url': 'https://safeweb.norton.com/?ulang=kor', 'search_box_xpath': '//*[@id="appendedInputButton"]'},
+    {'url': 'https://safeweb.norton.com/?ulang=kor', 'search_box_xpath': '/html/body/app-root/div/div/app-home-page/app-home-rating-lookup/section/div/form/div/div/input'},
     {'url': 'https://www.websiteplanet.com/ko/webtools/redirected/', 'search_box_xpath': '//*[@id="url"]'},
-    {'url': 'https://urlhaus.abuse.ch/browse/', 'search_box_xpath': '//*[@id="search"]'},
-    #{'url': 'https://www.virustotal.com/gui/home/url', 'search_box_xpath': '//*[@id="urlSearchInput"]'},
     #{'url': 'https://metadefender.opswat.com/', 'search_box_xpath': '//*[@id="mdc-focus-wrapper"]/div/div/div/div/div[1]/div[2]/div[1]/div/div/div[2]/div/div[1]/div[1]/div/input'},
     #{'url': 'https://urlquery.net/', 'search_box_xpath': '//*[@id="url_submit"]'},
     #{'url': 'https://transparencyreport.google.com/safe-browsing/search', 'search_box_xpath': '//*[@id="scrolling-element"]/safe-browsing-report/ng-component/section/div/search-box/input'},
     #{'url': 'https://www.aioncloud.com/ko/wms-kr/', 'search_box_xpath': '//*[@id="panel-324-0-0-2"]/div/div/div/div/div[2]/input'},
+    {'url': 'https://www.virustotal.com/gui/home/url'},
 ]
 
 website_searcher = WebsiteSearcher()
